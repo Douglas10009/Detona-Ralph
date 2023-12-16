@@ -51,6 +51,13 @@ function randomSquare() {
     randomSquare.classList.add('enemy');
 }
 
+// Função para tocar audio
+function playAudio(audioName) {
+    let audio = new Audio(`./src/audios/${audioName}.m4a`);
+    audio.volume = 0.2;
+    audio.play()
+}
+
 
 // Adiciona um listener (quem espera um evento) para verificar se o ralph foi clicado
 function addListenerHitBox() {
@@ -62,6 +69,7 @@ function addListenerHitBox() {
                 state.view.score.innerText ++;
                 state.values.result = state.view.score.innerText;
                 square.classList.remove('enemy')
+                playAudio('hit');
 
                 // TODO - Aumentar o nível de dificuldade do jogo, diminuindo o tempo em que ele vai ficar parado, mas n funciona
                 // if (state.view.score.innerText >= state.values.dificultLevel) {
