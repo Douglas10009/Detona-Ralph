@@ -25,7 +25,7 @@ O site possui as seguintes funcionalidades básicas:
 
 - **Estrutura HTML Semântica**: Utilização adequada das tags HTML para garantir uma estrutura semântica.
 
-- **Estilo com CSS**: Aplicação de estilos usando a pasta `src/style/` para tornar a interface atraente e responsiva.
+- **Estilo com CSS**: Aplicação de estilos usando a pasta `src/style/` para tornar a interface atraente.
 
 - **Interatividade com JavaScript**: A pasta `src/scripts/` contém scripts JavaScript para adicionar interatividade à página.
 
